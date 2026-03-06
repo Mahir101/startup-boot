@@ -6,8 +6,8 @@
 
 ![Startup Ecosystem Header](./assets/header.png)
 
-[![GitHub stars](https://img.shields.io/github/stars/mdmahirlabib/startup-boot?style=social)](https://github.com/mdmahirlabib/startup-boot)
-[![GitHub forks](https://img.shields.io/github/forks/mdmahirlabib/startup-boot?style=social)](https://github.com/mdmahirlabib/startup-boot/network)
+[![GitHub stars](https://img.shields.io/github/stars/Mahir101/startup-boot?style=social)](https://github.com/Mahir101/startup-boot)
+[![GitHub forks](https://img.shields.io/github/forks/Mahir101/startup-boot?style=social)](https://github.com/Mahir101/startup-boot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## About
