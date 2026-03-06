@@ -133,14 +133,6 @@ flowchart TD
     click Launch "https://www.producthunt.com/" "Product Hunt"
 ```
 
-    click Metrics "https://posthog.com/" "PostHog"
-    click Launch "https://www.producthunt.com/" "Product Hunt"
-```
-
-    click Metrics "https://posthog.com/" "PostHog"
-    click Launch "https://www.producthunt.com/" "Product Hunt"
-```
-
 ### 4. The Operational Mesh Network (Advanced)
 A multidimensional view of how departments and tools interact to create a self-sustaining system.
 
@@ -240,7 +232,7 @@ graph TD
         iDEA{iDEA Grant<br/>BDT 10L}
         Trade[RJSC & Trade License]
         SBDL[Startup Bangladesh Ltd<br/>Seed Equity]
-        B Angels[Bangladesh Angels]
+        BAngels[Bangladesh Angels]
     end
 
     subgraph "International Leap (Scale Focused)"
@@ -253,8 +245,8 @@ graph TD
     %% Connections (The Bridge)
     Idea --> Trade
     Trade --> iDEA
-    iDEA --> B Angels
-    B Angels --> SBDL
+    iDEA --> BAngels
+    BAngels --> SBDL
     
     %% The Transition
     SBDL -- "Series A / Global Traction" --> SG_Hub
