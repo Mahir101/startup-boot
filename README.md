@@ -29,7 +29,7 @@ This repository is a curated directory of essential resources for every stage of
 
 This collection includes:
 
-- **Learning Resources** - Books, courses, essays, and videos from industry leaders. **[For Bangladesh 🇧🇩]**: [Business Inspection BD](https://www.youtube.com/@BusinessInspectionBD), [Programming Hero](https://www.programming-hero.com/)
+- **Learning Resources** - Books, courses, essays, and videos from industry leaders. **[For Bangladesh 🇧🇩]**: [Business Inspection BD](https://www.youtube.com/@BusinessInspectionBD)
 - **Tools & Software** - SaaS products, development tools, and automation platforms. **[For Bangladesh 🇧🇩]**: [Nexis (HR Tech)](https://nexis.tech/)
 - **Funding Resources** - Guides, angel directories, and pitch deck examples. **[For Bangladesh 🇧🇩]**: [iDEA Project](https://idea.gov.bd/), [Startup Bangladesh Ltd](https://startupbangladesh.vc/)
 - **Communities** - Online forums and networks to connect with other founders
@@ -306,6 +306,7 @@ How the system works for a Bangladeshi founder.
 - [Website & Hosting](#website--hosting)
 - [Design Tools](#design-tools)
 - [Stock Resources](#stock-resources)
+- [AI Startup Stack (2025)](#essential-ai-startup-stack-2025-build)
 - [AI Tools](#ai-tools)
 - [Content & SEO](#content--seo)
 - [Automation & Backend](#automation--backend)
@@ -412,17 +413,10 @@ Learn from the best in the world. These creators teach business, scaling, and we
 - [Stanford GSB](https://www.youtube.com/@stanfordgsb) - Academic but highly practical lectures from Silicon Valley's heart.
 
 ### 🇧🇩 Bangladeshi Leaders (Ecosystem Focus)
-- [Khalid Farhan](https://www.youtube.com/@KhalidFarhan) - Extensive guides on digital marketing, personal branding, and scaling from BD.
+- [Khalid Farhan](https://www.youtube.com/@KhalidFarhan) **[For Bangladesh 🇧🇩]** - Digital marketing, wealth creation, and scaling from BD.
 - [Cha and Business (Rafsan Sabab)](https://www.youtube.com/@RafsanSabab) - The best local show for deep-dive interviews with Bangladeshi startup CEOs.
 - [Future Startup](https://www.youtube.com/@FutureStartup) - Analysis and news specifically for the Bangladeshi ecosystem.
 - [Business Inspection BD](https://www.youtube.com/@BusinessInspectionBD) **[For Bangladesh 🇧🇩]** - Deep dive into local business models and industry insights.
-- [Khalid Farhan](https://www.youtube.com/@KhalidFarhan) **[For Bangladesh 🇧🇩]** - Digital marketing and wealth creation.
-
----
-
-## 🤖 Essential AI Startup Stack (2025 Build)
-
----
 
 ## Podcasts
 
@@ -724,7 +718,7 @@ Learn from the best in the world. These creators teach business, scaling, and we
 
 ---
 
-## 🤖 Essential AI Startup Stack (Fast Build)
+## 🤖 Essential AI Startup Stack (2025 Build)
 
 Use these tools to move from idea to MVP in days, not months.
 
@@ -752,7 +746,7 @@ Use these tools to move from idea to MVP in days, not months.
 
 ---
 
-## AI Tools (General)
+## AI Tools
 
 - [ChatGPT](https://chat.openai.com/)
 - [Rows](https://rows.com/)
