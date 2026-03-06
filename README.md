@@ -2,7 +2,7 @@
 
 > A curated collection of essential resources, tools, and playbooks to help founders build, launch, and scale startups successfully.
 
-**Maintained & Curated by [Md. Mahir Labib](https://x.com/mahirlabib)**
+**Maintained & Curated by [Md. Mahir Labib](https://x.com/MdMahirlabib5)**
 
 ![Startup Ecosystem Header](./assets/header.png)
 
