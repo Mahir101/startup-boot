@@ -300,17 +300,17 @@ flowchart TD
 
     subgraph VALIDATE["🔬 VALIDATION ENGINE"]
         V1[Customer Interviews] --> V2[Smoke Test / Landing Page]
-        V2 --> V3[Pre-sell / LOI / Waitlist]
-        V3 --> V4{Demand\nConfirmed?}
+        V2 --> V3["Pre-sell / LOI / Waitlist"]
+        V3 --> V4{Demand Confirmed?}
         V4 -->|No| V1
         V4 -->|Yes| BUILD
     end
 
     subgraph BUILD["🏗️ BUILD ENGINE"]
-        B1[Spec & Design] --> B2[MVP Sprint\n2-4 weeks]
-        B2 --> B3[Alpha: 5 users]
-        B3 --> B4[Beta: 50-200 users]
-        B4 --> B5{PMF\nSignal?}
+        B1[Spec and Design] --> B2["MVP Sprint 2-4 weeks"]
+        B2 --> B3["Alpha: 5 users"]
+        B3 --> B4["Beta: 50-200 users"]
+        B4 --> B5{PMF Signal?}
         B5 -->|No| B2
         B5 -->|Yes| GROWTH
     end
@@ -322,36 +322,36 @@ flowchart TD
         G4 --> G5[Referral]
         G5 --> G1
 
-        G1 --- G1A[SEO · Ads · Content\nProduct Hunt · Cold Outreach]
-        G2 --- G2A[Onboarding · AHA Moment\nTime-to-Value < 5 min]
-        G3 --- G3A[Email Sequences\nPush · In-app · NPS]
-        G4 --- G4A[Upsell · Expand\nAnnual Plans · Add-ons]
-        G5 --- G5A[Referral Loops\nAffiliates · Word of Mouth]
+        G1 --- G1A["SEO · Ads · Content\nProduct Hunt · Cold Outreach"]
+        G2 --- G2A["Onboarding · AHA Moment\nTime-to-Value under 5 min"]
+        G3 --- G3A["Email Sequences\nPush · In-app · NPS"]
+        G4 --- G4A["Upsell · Expand\nAnnual Plans · Add-ons"]
+        G5 --- G5A["Referral Loops\nAffiliates · Word of Mouth"]
     end
 
     subgraph MOAT["🏰 MOAT BUILDING"]
         M1[Switching Costs] & M2[Network Effects] & M3[Data Advantage] & M4[Brand Equity]
-        M1 & M2 & M3 & M4 --> MOATCORE[Defensible\nBusiness]
+        M1 & M2 & M3 & M4 --> MOATCORE["Defensible Business"]
     end
 
     subgraph FINANCE["💰 FINANCIAL ENGINE"]
-        F1[Revenue] --> F2[Unit Economics\nLTV > 3x CAC]
-        F2 --> F3[Gross Margin\nTarget 60-80%]
+        F1[Revenue] --> F2["Unit Economics\nLTV greater than 3x CAC"]
+        F2 --> F3["Gross Margin\nTarget 60-80%"]
         F3 --> F4{Profitable?}
-        F4 -->|No| F5[Fundraise\nSeed → A → B]
-        F4 -->|Yes| F6[Reinvest\nor Distribute]
+        F4 -->|No| F5["Fundraise\nSeed to A to B"]
+        F4 -->|Yes| F6["Reinvest or Distribute"]
         F5 --> F4
     end
 
     subgraph TEAM["👥 TEAM ENGINE"]
-        T1[Founders] --> T2[Early Hires\nGeneralists first]
-        T2 --> T3[Specialists\nPost Series A]
-        T3 --> T4[Leadership\nVPs and Directors]
-        T4 --> T5[Culture\nValues · OKRs · Rituals]
+        T1[Founders] --> T2["Early Hires\nGeneralists first"]
+        T2 --> T3["Specialists\nPost Series A"]
+        T3 --> T4["Leadership\nVPs and Directors"]
+        T4 --> T5["Culture\nValues · OKRs · Rituals"]
     end
 
     subgraph EXIT_PATHS["🏁 EXIT OR SUSTAIN"]
-        E1[IPO] & E2[Acquisition] & E3[Profitable\nSustainable Business]
+        E1[IPO] & E2[Acquisition] & E3["Profitable Sustainable Business"]
     end
 
     GROWTH --> MOAT
