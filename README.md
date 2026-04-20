@@ -366,14 +366,14 @@ flowchart TD
     TEAM --> BUILD
     MOAT --> G3
 
-    style IDEA fill:#e74c3c,stroke:#fff,color:#fff,stroke-width:3px
-    style VALIDATE fill:#1a1a2e,stroke:#9b59b6,color:#fff
-    style BUILD fill:#0f3460,stroke:#3498db,color:#fff
-    style GROWTH fill:#16213e,stroke:#2ecc71,color:#fff
-    style MOAT fill:#533483,stroke:#f39c12,color:#fff
-    style FINANCE fill:#1a1a2e,stroke:#27ae60,color:#fff
-    style TEAM fill:#0f3460,stroke:#e67e22,color:#fff
-    style EXIT_PATHS fill:#16213e,stroke:#f1c40f,color:#fff
+    style IDEA fill:#ffe4e6,stroke:#b91c1c,color:#111,stroke-width:3px
+    style VALIDATE fill:#eff6ff,stroke:#1d4ed8,color:#111
+    style BUILD fill:#ecfdf5,stroke:#047857,color:#111
+    style GROWTH fill:#fef3c7,stroke:#b45309,color:#111
+    style MOAT fill:#f3e8ff,stroke:#7c3aed,color:#111
+    style FINANCE fill:#e0f2fe,stroke:#0369a1,color:#111
+    style TEAM fill:#ffedd5,stroke:#c2410c,color:#111
+    style EXIT_PATHS fill:#dbeafe,stroke:#2563eb,color:#111
 ```
 
 ### 4. The Operational Mesh Network (Advanced)
