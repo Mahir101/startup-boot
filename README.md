@@ -2848,7 +2848,7 @@ Read the full guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
 - Star this repo to show your support
 - Share it with fellow founders and entrepreneurs
 - Follow for updates as we add new resources
-- Join the discussion in [Issues](https://github.com/Mah101/startup-boot/issues)
+- Join the discussion in [Issues](https://github.com/Mahir101/startup-boot/issues)
 
 ---
 
