@@ -4,8 +4,6 @@
 
 **Maintained & Curated by [Md. Mahir Labib](https://x.com/MdMahirlabib5)**
 
-![Startup Ecosystem Header](./assets/header.png)
-
 [![GitHub stars](https://img.shields.io/github/stars/Mahir101/startup-boot?style=social)](https://github.com/Mahir101/startup-boot)
 [![GitHub forks](https://img.shields.io/github/forks/Mahir101/startup-boot?style=social)](https://github.com/Mahir101/startup-boot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -321,42 +319,101 @@ flowchart TD
 ```
 
 ### 4. The Operational Mesh Network (Advanced)
-A multidimensional view of how departments and tools interact to create a self-sustaining system.
+How every department, signal, and tool connects in a self-sustaining operating system.
 
 ```mermaid
-graph LR
-    %% Central Hub
-    Founder((Md. Mahir Labib<br/>Founder's Hub))
-    
-    %% Functional Nodes
-    Product[Product Architecture]
-    Growth[Growth Engine]
-    Finance[Capital Ops]
-    Support[User Success]
-    
-    %% Connections (The Mesh)
-    Founder <--> Product
-    Founder <--> Growth
-    Founder <--> Finance
-    Founder <--> Support
-    
-    Product -- "API/Data" --> Growth
-    Growth -- "Feedback" --> Product
-    Support -- "Insights" --> Product
-    Support -- "Retention" --> Growth
-    
-    Finance -- "Budget" --> Growth
-    Finance -- "Runway" --> Founder
-    
-    %% Tool Overlay
-    subgraph "Tech Integrated Mesh"
-        Product --- Cursor[Cursor/v0.dev]
-        Growth --- Braze[Braze/PostHog]
-        Finance --- Stripe[Stripe/Dodo]
-        Support --- Intercom[Intercom/Slack]
+graph TB
+    CEO(("🧠 FOUNDER\nCEO / CTO / CPO"))
+
+    subgraph PRODUCT["🛠️ PRODUCT & ENGINEERING"]
+        P1[Product Roadmap\nLinear · Notion] --> P2[Design System\nFigma · Storybook]
+        P2 --> P3[Engineering\nCursor · GitHub · CI/CD]
+        P3 --> P4[QA + Testing\nSentry · Playwright]
+        P4 --> P5[Deploy\nVercel · Railway · AWS]
+        P5 --> P6[Monitoring\nDatadog · UptimeRobot]
     end
 
-    style Founder fill:#f1c40f,stroke:#333,stroke-width:4px
+    subgraph GROWTH_D["📣 GROWTH & MARKETING"]
+        GR1[Content Strategy\nSEO · Blog · YouTube] --> GR2[Distribution\nTwitter · LinkedIn · Newsletter]
+        GR2 --> GR3[Paid Acquisition\nGoogle Ads · Meta · LinkedIn]
+        GR3 --> GR4[Lead Gen\nClay · Apollo · Product Hunt]
+        GR4 --> GR5[Conversion\nLanding Pages · A/B Tests]
+        GR5 --> GR6[Attribution\nPostHog · Segment · GA4]
+    end
+
+    subgraph SALES["💼 SALES & REVENUE"]
+        S1[Lead Qualification\nMQL → SQL] --> S2[Outreach\nApollo · Instantly · LinkedIn]
+        S2 --> S3[Demo + Proposal\nLoom · Notion · DocuSign]
+        S3 --> S4[Close\nStripe · Chargebee · Paddle]
+        S4 --> S5[CRM Update\nHubSpot · Pipedrive]
+        S5 --> S6[Revenue Tracking\nChartMogul · Baremetrics]
+    end
+
+    subgraph CX_D["🤝 CUSTOMER SUCCESS"]
+        CX1[Onboarding\nIntercom · Appcues] --> CX2[Activation\nAHA Moment < 5 min]
+        CX2 --> CX3[Engagement\nBraze · MoEngage · Email]
+        CX3 --> CX4[Support\nZendesk · Crisp · Slack]
+        CX4 --> CX5[NPS + CSAT\nDelighted · Typeform]
+        CX5 --> CX6[Expansion\nUpsell · Cross-sell · Referral]
+    end
+
+    subgraph FINANCE_D["💰 FINANCE & LEGAL"]
+        FN1[Revenue Recognition\nStripe · QuickBooks] --> FN2[Cash Flow\nMercury · Brex · Wise]
+        FN2 --> FN3[Burn Rate\nMonthly P&L Review]
+        FN3 --> FN4[Runway Mgmt\nScenario Planning]
+        FN4 --> FN5[Cap Table\nCart · Pulley · AngelList]
+        FN5 --> FN6[Compliance\nAudit · Tax · Legal]
+    end
+
+    subgraph DATA["📊 DATA & INTELLIGENCE"]
+        D1[Event Collection\nSegment · RudderStack] --> D2[Warehouse\nSnowflake · BigQuery]
+        D2 --> D3[Analytics\nMetabase · Looker · Tableau]
+        D3 --> D4[Experimentation\nA/B Tests · Feature Flags]
+        D4 --> D5[Insights\nWeekly Data Review]
+        D5 --> D6[Decisions\nNorth Star Metric Review]
+    end
+
+    subgraph PEOPLE["👥 TEAM & CULTURE"]
+        HR1[Hiring\nWellfound · LinkedIn · Referrals] --> HR2[Onboarding\nNotebook · Loom · Notion]
+        HR2 --> HR3[OKRs\nQuarterly Goal Setting]
+        HR3 --> HR4[Performance\n1:1s · Reviews]
+        HR4 --> HR5[Culture\nValues · Rituals · Async]
+        HR5 --> HR6[Compensation\nEquity · Salary · ESOP]
+    end
+
+    %% CEO connections to all departments
+    CEO <--> PRODUCT
+    CEO <--> GROWTH_D
+    CEO <--> SALES
+    CEO <--> CX_D
+    CEO <--> FINANCE_D
+    CEO <--> DATA
+    CEO <--> PEOPLE
+
+    %% Cross-department mesh signals
+    P5 -- "Feature Release" --> GR1
+    GR6 -- "Traffic Data" --> D1
+    GR4 -- "Leads" --> S1
+    S6 -- "Revenue" --> FN1
+    S5 -- "Customer Data" --> CX1
+    CX5 -- "NPS Signal" --> P1
+    CX6 -- "Expansion Revenue" --> S6
+    D6 -- "Product Decisions" --> P1
+    D6 -- "Growth Decisions" --> GR1
+    D5 -- "Churn Risk" --> CX3
+    FN4 -- "Budget" --> GR3
+    FN4 -- "Headcount Plan" --> HR1
+    HR3 -- "OKRs" --> P1
+    HR3 -- "OKRs" --> GR1
+
+    style CEO fill:#f1c40f,stroke:#333,color:#333,stroke-width:4px
+    style PRODUCT fill:#1a1a2e,stroke:#3498db,color:#fff
+    style GROWTH_D fill:#0f3460,stroke:#2ecc71,color:#fff
+    style SALES fill:#16213e,stroke:#e74c3c,color:#fff
+    style CX_D fill:#533483,stroke:#f39c12,color:#fff
+    style FINANCE_D fill:#1a1a2e,stroke:#27ae60,color:#fff
+    style DATA fill:#0f3460,stroke:#9b59b6,color:#fff
+    style PEOPLE fill:#16213e,stroke:#e67e22,color:#fff
 ```
 
 ## 🔥 Startup Failure Autopsy
