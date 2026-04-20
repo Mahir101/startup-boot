@@ -178,20 +178,20 @@ Why do most startups die? This decision tree maps the real reasons.
 
 ```mermaid
 flowchart TD
-    Start((Startup Failed]) --> Q1{Was there\nreal demand?}
-    Q1 -->|No| A1[Built the wrong thing\nNo customer discovery done]
-    Q1 -->|Yes| Q2{Did money\nrun out?}
+    Start([Startup Failed]) --> Q1{Was there real demand?}
+    Q1 -->|No| A1["Built the wrong thing\nNo customer discovery done"]
+    Q1 -->|Yes| Q2{Did money run out?}
     Q2 -->|Yes| Q3{Why?}
-    Q3 --> B1[Bad unit economics\nCAC > LTV]
-    Q3 --> B2[Scaled before\nPMF confirmed]
-    Q3 --> B3[No fundraising\nstrategy]
-    Q2 -->|No| Q4{Did the\nteam break?}
-    Q4 -->|Yes| C1[Equity split was wrong\nNo vesting schedule]
-    Q4 -->|Yes| C2[Co-founder mismatch\nSkills overlapped]
-    Q4 -->|No| Q5{Was timing\nwrong?}
-    Q5 -->|Too Early| D1[Market not ready\nInfrastructure missing]
-    Q5 -->|Too Late| D2[Incumbents dominated\nNo differentiation]
-    Q5 -->|No| E1[Execution failure\nNo focus, no urgency]
+    Q3 --> B1["Bad unit economics\nCAC > LTV"]
+    Q3 --> B2["Scaled before PMF confirmed"]
+    Q3 --> B3["No fundraising strategy"]
+    Q2 -->|No| Q4{Did the team break?}
+    Q4 -->|Yes| C1["Equity split was wrong\nNo vesting schedule"]
+    Q4 -->|Yes| C2["Co-founder mismatch\nSkills overlapped"]
+    Q4 -->|No| Q5{Was timing wrong?}
+    Q5 -->|Too Early| D1["Market not ready\nInfrastructure missing"]
+    Q5 -->|Too Late| D2["Incumbents dominated\nNo differentiation"]
+    Q5 -->|No| E1["Execution failure\nNo focus, no urgency"]
 
     style A1 fill:#e74c3c,color:#fff
     style B1 fill:#e74c3c,color:#fff
