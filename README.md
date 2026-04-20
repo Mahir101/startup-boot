@@ -173,14 +173,14 @@ flowchart TD
 
     DISCOVERY --> IDEATION --> BUILD --> LAUNCH --> GROWTH --> SCALE --> EXIT
 
-    style PMF fill:#e74c3c,stroke:#fff,color:#fff,stroke-width:4px
-    style DISCOVERY fill:#1a1a2e,stroke:#3498db,color:#fff
-    style IDEATION fill:#16213e,stroke:#9b59b6,color:#fff
-    style BUILD fill:#0f3460,stroke:#2ecc71,color:#fff
-    style LAUNCH fill:#533483,stroke:#f39c12,color:#fff
-    style GROWTH fill:#e94560,stroke:#fff,color:#fff
-    style SCALE fill:#0f3460,stroke:#27ae60,color:#fff
-    style EXIT fill:#1a1a2e,stroke:#f1c40f,color:#fff
+    style PMF fill:#fecaca,stroke:#991b1b,color:#111,stroke-width:4px
+    style DISCOVERY fill:#eff6ff,stroke:#2563eb,color:#111
+    style IDEATION fill:#eef2ff,stroke:#7c3aed,color:#111
+    style BUILD fill:#ecfdf5,stroke:#16a34a,color:#111
+    style LAUNCH fill:#fef3c7,stroke:#d97706,color:#111
+    style GROWTH fill:#fef2f2,stroke:#b91c1c,color:#111
+    style SCALE fill:#e0f2fe,stroke:#0284c7,color:#111
+    style EXIT fill:#ede9fe,stroke:#7c3aed,color:#111
 ```
 
 ### 2. The Tool Mesh Network
@@ -282,13 +282,13 @@ graph TB
     BRAZE --> APOLLO
     AHREFS --> METABASE
 
-    style INFRA fill:#1a1a2e,stroke:#3498db,color:#fff
-    style PRODUCT fill:#0f3460,stroke:#9b59b6,color:#fff
-    style ANALYTICS fill:#16213e,stroke:#f39c12,color:#fff
-    style GROWTH fill:#533483,stroke:#2ecc71,color:#fff
-    style REVENUE fill:#1a1a2e,stroke:#27ae60,color:#fff
-    style CX fill:#0f3460,stroke:#e74c3c,color:#fff
-    style OPS fill:#16213e,stroke:#f1c40f,color:#fff
+    style INFRA fill:#eff6ff,stroke:#1d4ed8,color:#111
+    style PRODUCT fill:#ecfdf5,stroke:#047857,color:#111
+    style ANALYTICS fill:#fef9c3,stroke:#b45309,color:#111
+    style GROWTH fill:#f5f3ff,stroke:#7c3aed,color:#111
+    style REVENUE fill:#e0f2fe,stroke:#0284c7,color:#111
+    style CX fill:#fef2f2,stroke:#dc2626,color:#111
+    style OPS fill:#fefce8,stroke:#a16207,color:#111
 ```
 
 ### 3. Complete Startup Growth Mesh
@@ -464,14 +464,14 @@ graph TB
     HR3 -- "OKRs" --> P1
     HR3 -- "OKRs" --> GR1
 
-    style CEO fill:#f1c40f,stroke:#333,color:#333,stroke-width:4px
-    style PRODUCT fill:#1a1a2e,stroke:#3498db,color:#fff
-    style GROWTH_D fill:#0f3460,stroke:#2ecc71,color:#fff
-    style SALES fill:#16213e,stroke:#e74c3c,color:#fff
-    style CX_D fill:#533483,stroke:#f39c12,color:#fff
-    style FINANCE_D fill:#1a1a2e,stroke:#27ae60,color:#fff
-    style DATA fill:#0f3460,stroke:#9b59b6,color:#fff
-    style PEOPLE fill:#16213e,stroke:#e67e22,color:#fff
+    style CEO fill:#fef9c3,stroke:#d97706,color:#111,stroke-width:4px
+    style PRODUCT fill:#eff6ff,stroke:#2563eb,color:#111
+    style GROWTH_D fill:#ecfdf5,stroke:#16a34a,color:#111
+    style SALES fill:#fef2f2,stroke:#dc2626,color:#111
+    style CX_D fill:#f5f3ff,stroke:#7c3aed,color:#111
+    style FINANCE_D fill:#e0f2fe,stroke:#0284c7,color:#111
+    style DATA fill:#eef2ff,stroke:#4f46e5,color:#111
+    style PEOPLE fill:#ffedd5,stroke:#c2410c,color:#111
 ```
 
 ## 🔥 Startup Failure Autopsy
