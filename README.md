@@ -215,15 +215,15 @@ flowchart TD
     Start([Your Product]) --> Q1{B2B or B2C?}
 
     Q1 -->|B2C| Q2{Price point?}
-    Q2 -->|Free / Under $20/mo| G1[Product-Led Growth\nViral loops, freemium, self-serve onboarding]
-    Q2 -->|$20-$200/mo| G2[Content + Community\nSEO, YouTube, influencer, PLG]
+    Q2 -->|Free / Under $20/mo| G1["Product-Led Growth\nViral loops, freemium, self-serve onboarding"]
+    Q2 -->|$20-$200/mo| G2["Content + Community\nSEO, YouTube, influencer, PLG"]
 
-    Q1 -->|B2B| Q3{ACV — Annual\nContract Value?}
-    Q3 -->|Under $5K| G3[Self-Serve / Inside Sales\nTrials, demos, automated onboarding]
-    Q3 -->|$5K - $50K| G4[Inside Sales + ABM\nSDR outreach, targeted campaigns]
-    Q3 -->|$50K+| G5[Enterprise / Field Sales\nChampion-based, multi-stakeholder]
+    Q1 -->|B2B| Q3{ACV — Annual Contract Value?}
+    Q3 -->|Under $5K| G3["Self-Serve / Inside Sales\nTrials, demos, automated onboarding"]
+    Q3 -->|$5K - $50K| G4["Inside Sales + ABM\nSDR outreach, targeted campaigns"]
+    Q3 -->|$50K+| G5["Enterprise / Field Sales\nChampion-based, multi-stakeholder"]
 
-    Q1 -->|Marketplace| G6[Supply-Side First\nSign up sellers/providers before buyers]
+    Q1 -->|Marketplace| G6["Supply-Side First\nSign up sellers/providers before buyers"]
 
     G1 --> T1[Tools: PostHog · Intercom · Viral loops]
     G2 --> T2[Tools: Ahrefs · Substack · Creator partnerships]
@@ -284,17 +284,17 @@ Not all moats are equal. Network effects are the strongest — but only if you p
 
 ```mermaid
 graph TD
-    NE[Network Effects] --> D[Direct\nMore users = more value for each user\nExamples: WhatsApp, Telegram]
-    NE --> ID[Indirect\nMore users on one side = more value on the other\nExamples: iOS App Store, Uber]
-    NE --> DA[Data\nMore usage = smarter product\nExamples: Google Maps, Spotify]
-    NE --> SO[Social\nReputation and identity tied to platform\nExamples: LinkedIn, GitHub]
-    NE --> PL[Platform\nMore developers = more apps = more users\nExamples: Shopify, Salesforce]
+    NE[Network Effects] --> D["Direct\nMore users = more value for each user\nExamples: WhatsApp, Telegram"]
+    NE --> ID["Indirect\nMore users on one side = more value on the other\nExamples: iOS App Store, Uber"]
+    NE --> DA["Data\nMore usage = smarter product\nExamples: Google Maps, Spotify"]
+    NE --> SO["Social\nReputation and identity tied to platform\nExamples: LinkedIn, GitHub"]
+    NE --> PL["Platform\nMore developers = more apps = more users\nExamples: Shopify, Salesforce"]
 
-    D --> S1[Strength: Very hard to leave once friends are on]
-    ID --> S2[Strength: Winner-takes-most markets]
-    DA --> S3[Strength: Data compounds — late entrants can never catch up]
-    SO --> S4[Strength: Switching = losing your reputation or history]
-    PL --> S5[Strength: Ecosystem lock-in — switching costs explode]
+    D --> S1["Strength: Very hard to leave once friends are on"]
+    ID --> S2["Strength: Winner-takes-most markets"]
+    DA --> S3["Strength: Data compounds — late entrants can never catch up"]
+    SO --> S4["Strength: Switching = losing your reputation or history"]
+    PL --> S5["Strength: Ecosystem lock-in — switching costs explode"]
 
     style NE fill:#8e44ad,color:#fff
     style D fill:#3498db,color:#fff
@@ -565,21 +565,21 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    Start([Where are you selling?]) --> Q1{Primary\nmarket?}
+    Start([Where are you selling?]) --> Q1{Primary market?}
 
-    Q1 -->|Bangladesh only| Q2{Raising from\nlocal VCs?}
-    Q2 -->|Yes| E1[Private Limited Company\nvia RJSC Bangladesh\nRequired for iDEA and SBDL]
-    Q2 -->|No / Bootstrap| E2[Trade License + Sole Proprietorship\nFastest to start, easy banking]
+    Q1 -->|Bangladesh only| Q2{Raising from local VCs?}
+    Q2 -->|Yes| E1["Private Limited Company\nvia RJSC Bangladesh\nRequired for iDEA and SBDL"]
+    Q2 -->|No / Bootstrap| E2["Trade License + Sole Proprietorship\nFastest to start, easy banking"]
 
-    Q1 -->|US / Global| Q3{Raising from\nUS investors?}
-    Q3 -->|Yes| E3[Delaware C-Corp\nvia Stripe Atlas or Clerky\nRequired for Y Combinator and most US VCs]
-    Q3 -->|SaaS / No raise| E4[Wyoming LLC\nLow cost, flexible, great for solo founders]
+    Q1 -->|US / Global| Q3{Raising from US investors?}
+    Q3 -->|Yes| E3["Delaware C-Corp\nvia Stripe Atlas or Clerky\nRequired for Y Combinator and most US VCs"]
+    Q3 -->|SaaS / No raise| E4["Wyoming LLC\nLow cost, flexible, great for solo founders"]
 
-    Q1 -->|Southeast Asia / MENA| E5[Singapore Pte. Ltd.\nTax-friendly, trusted by global VCs\nGood for BD founders going regional]
+    Q1 -->|Southeast Asia / MENA| E5["Singapore Pte. Ltd.\nTax-friendly, trusted by global VCs\nGood for BD founders going regional"]
 
-    E1 --> N1[Next: BIDA registration for\nforeign investment eligibility]
-    E3 --> N2[Next: Open Mercury or Brex account\nfor US banking]
-    E5 --> N3[Next: ACRA registration in Singapore\ncan be done remotely]
+    E1 --> N1["Next: BIDA registration for foreign investment eligibility"]
+    E3 --> N2["Next: Open Mercury or Brex account for US banking"]
+    E5 --> N3["Next: ACRA registration in Singapore - can be done remotely"]
 
     style E1 fill:#27ae60,color:#fff
     style E2 fill:#2980b9,color:#fff
@@ -603,7 +603,7 @@ flowchart TD
     --> Orchestration["⚙️ ORCHESTRATION\nN8N / Make / LangGraph\nRouting · Retry logic\nHuman-in-the-loop triggers"]
     --> Output[/"📤 OUTPUT\nDraft sent · Row updated\nSlack notified · Report generated"/]
 
-    Brain --> HumanCheck{"🧑 Human\napproval\nneeded?"}
+    Brain --> HumanCheck{"🧑 Human approval needed?"}
     HumanCheck -->|Yes| HumanInput["👤 Human reviews\nand approves"]
     HumanInput --> Tools
     HumanCheck -->|No| Tools
