@@ -8,11 +8,32 @@
 [![GitHub forks](https://img.shields.io/github/forks/Mahir101/startup-boot?style=social)](https://github.com/Mahir101/startup-boot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+## Table of contents
+
+- [About](#about)
+- [Getting started](#getting-started)
+- [Who Is This For?](#who-is-this-for)
+- [What's Inside?](#whats-inside)
+- [Curated Startup Resources](#curated-startup-resources)
+- [Startup Architecture & Mesh Network](#startup-architecture--mesh-network)
+- [Bangladesh Startup Ecosystem](#bangladesh-startup-ecosystem)
+- [Contributing](#contributing)
+- [Project support files](#project-support-files)
+
 ## About
 
 Building a startup is hard. Finding the right tools shouldn't be.
 
 This repository is a curated directory of essential resources for every stage of your startup journey -> from ideation to scaling. Whether you're a first-time founder or a serial entrepreneur, you'll find tools for product development, marketing, fundraising, team management, and everything in between.
+
+## Getting started
+
+Use this kit as your startup operating manual and link library.
+
+1. Start with the stage you are in: idea, build, launch, growth, or scale.
+2. Follow the curated resources below and copy the frameworks into your own workspace.
+3. Use the diagrams as decision checkpoints, not the only path.
+4. Share updates, requests, and resource suggestions via the repository's contribution guide.
 
 ##  Who Is This For?
 
@@ -27,14 +48,51 @@ This repository is a curated directory of essential resources for every stage of
 
 This collection includes:
 
-- **Learning Resources** - Books, courses, essays, and videos from industry leaders. **[For Bangladesh 🇧🇩]**: [Business Inspection BD](https://www.youtube.com/@BusinessInspectionBD)
-- **Tools & Software** - SaaS products, development tools, and automation platforms. **[For Bangladesh 🇧🇩]**: [Nexis (HR Tech)](https://nexis.tech/)
-- **Funding Resources** - Guides, angel directories, and pitch deck examples. **[For Bangladesh 🇧🇩]**: [iDEA Project](https://idea.gov.bd/), [Startup Bangladesh Ltd](https://startupbangladesh.vc/)
-- **Communities** - Online forums and networks to connect with other founders
-- **Design Assets** - UI kits, icon libraries, and stock resources
-- **Analytics & Data** - Tools to measure and optimize your metrics
-- **Startup Programs** - Credits and deals from major platforms (AWS, Google Cloud, etc.)
-- **Marketing Channels** - Places to launch and promote your product
+- **Learning Resources** - Books, courses, essays, and videos from industry leaders.
+- **Tools & Software** - Product, development, analytics, marketing, and finance tools.
+- **Funding Resources** - Angel networks, VC research, pitch deck examples, and stage guidance.
+- **Communities** - Founder groups, launch communities, and ecosystem networks.
+- **Design Assets** - UI kits, icon libraries, stock media, and brand resources.
+- **Analytics & Data** - Product analytics, growth reporting, and dashboard tools.
+- **Startup Programs** - Startup credits, accelerator programs, and platform deals.
+- **Marketing Channels** - Launch platforms, content channels, and paid acquisition options.
+
+## Curated Startup Resources
+
+### Learning resources
+- Books: *The Lean Startup*, *Zero to One*, *Crossing the Chasm*, *Inspired*, *Hooked*.
+- Essays: *Do Things That Don't Scale*, *The Only Strategy That Matters*, *How to Start a Startup*.
+- Courses & programs: [Y Combinator Startup School](https://www.startupschool.org), [Reforge](https://www.reforge.com), [Coursera Startup Courses](https://www.coursera.org), [Google for Startups Academy](https://cloud.google.com/programs/startup).
+
+### Tools & software
+- Product build: [Figma](https://www.figma.com), [Notion](https://www.notion.so), [Linear](https://linear.app), [Miro](https://miro.com).
+- MVP infrastructure: [Supabase](https://supabase.com), [Vercel](https://vercel.com), [Replit](https://replit.com), [Railway](https://railway.app), [Render](https://render.com).
+- Growth & marketing: [PostHog](https://posthog.com), [HubSpot](https://www.hubspot.com), [Ahrefs](https://ahrefs.com), [MailerLite](https://www.mailerlite.com), [Buffer](https://buffer.com), [Zapier](https://zapier.com).
+- Payments & finance: [Stripe](https://stripe.com), [Chargebee](https://www.chargebee.com), [Paddle](https://paddle.com), [Baremetrics](https://baremetrics.com).
+
+### Funding & pitch resources
+- Directories: [AngelList](https://angel.co), [Crunchbase](https://www.crunchbase.com), [Gust](https://gust.com).
+- Pitch helps: [Sequoia pitch deck template](https://www.sequoiacap.com/build/pitch-deck-template/), [Airbnb original deck](https://alexanderjarvis.com/airbnb-pitch-deck-original-pitch/), [DocSend fundraising research](https://www.docsend.com/fundraising-research/).
+- Stage guidance: pre-seed, seed, Series A, B, C expectations and fundraising milestones.
+
+### Communities
+- Startup communities: [Indie Hackers](https://www.indiehackers.com), [Product Hunt](https://www.producthunt.com), [Hacker News](https://news.ycombinator.com), [GrowthHackers](https://growthhackers.com).
+- Founder networks: [YC Startup School community](https://www.startupschool.org), [Founder Cafe](https://foundercafe.com), local Discords and Slack groups.
+
+### Design & growth assets
+- UI kits: [Figma Community](https://www.figma.com/community), [Tailwind UI](https://tailwindui.com), [Ant Design](https://ant.design).
+- Icons & media: [Heroicons](https://heroicons.com), [Font Awesome](https://fontawesome.com), [Unsplash](https://unsplash.com), [Pexels](https://www.pexels.com), [LottieFiles](https://lottiefiles.com).
+
+### Startup programs
+- Startup credits: [AWS Activate](https://aws.amazon.com/activate), [Google Cloud for Startups](https://cloud.google.com/startups), [GitHub for Startups](https://github.com/startups), [Stripe Atlas](https://stripe.com/atlas).
+- Platform deals: free tiers for development, collaboration, analytics, and legal services.
+
+### Marketing channels
+- Launch platforms: [Product Hunt](https://www.producthunt.com), [BetaList](https://betalist.com), [Reddit](https://www.reddit.com).
+- Content channels: [Twitter/X](https://twitter.com), [LinkedIn](https://linkedin.com), [Substack](https://substack.com), [Beehiiv](https://beehiiv.com).
+- Growth tactics: SEO, newsletter, referral loops, paid ads, community engagement.
+
+> If you want the most Bangladesh-focused resources, scroll to the ecosystem section below.
 
 ## 🏗️ Startup Architecture & Mesh Network
 
@@ -2407,6 +2465,22 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ##  Acknowledgments
 
 This repository is curated and maintained by **Md. Mahir Labib**. Special thanks to all contributors who have helped curate and maintain this collection.
+
+## Contributing
+
+This repository is designed to be a living document for founders.
+
+- Found a missing tool, resource, or local program? Open an issue.
+- Want to add a new section? Submit a pull request.
+- Need to update links, references, or stage guidance? Please contribute.
+
+Read the full guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Project support files
+
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- [SECURITY.md](SECURITY.md)
+- [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## 💬 Community & Support
 
