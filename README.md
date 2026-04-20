@@ -172,6 +172,502 @@ graph LR
     style Founder fill:#f1c40f,stroke:#333,stroke-width:4px
 ```
 
+## 🔥 Startup Failure Autopsy
+
+Why do most startups die? This decision tree maps the real reasons.
+
+```mermaid
+flowchart TD
+    Start((Startup Failed]) --> Q1{Was there\nreal demand?}
+    Q1 -->|No| A1[Built the wrong thing\nNo customer discovery done]
+    Q1 -->|Yes| Q2{Did money\nrun out?}
+    Q2 -->|Yes| Q3{Why?}
+    Q3 --> B1[Bad unit economics\nCAC > LTV]
+    Q3 --> B2[Scaled before\nPMF confirmed]
+    Q3 --> B3[No fundraising\nstrategy]
+    Q2 -->|No| Q4{Did the\nteam break?}
+    Q4 -->|Yes| C1[Equity split was wrong\nNo vesting schedule]
+    Q4 -->|Yes| C2[Co-founder mismatch\nSkills overlapped]
+    Q4 -->|No| Q5{Was timing\nwrong?}
+    Q5 -->|Too Early| D1[Market not ready\nInfrastructure missing]
+    Q5 -->|Too Late| D2[Incumbents dominated\nNo differentiation]
+    Q5 -->|No| E1[Execution failure\nNo focus, no urgency]
+
+    style A1 fill:#e74c3c,color:#fff
+    style B1 fill:#e74c3c,color:#fff
+    style B2 fill:#e74c3c,color:#fff
+    style B3 fill:#e74c3c,color:#fff
+    style C1 fill:#e67e22,color:#fff
+    style C2 fill:#e67e22,color:#fff
+    style D1 fill:#f39c12,color:#fff
+    style D2 fill:#f39c12,color:#fff
+    style E1 fill:#c0392b,color:#fff
+```
+
+---
+
+## 🗺️ Go-To-Market Strategy Selector
+
+Pick the wrong GTM motion and you waste months. Use this to find yours.
+
+```mermaid
+flowchart TD
+    Start([Your Product]) --> Q1{B2B or B2C?}
+
+    Q1 -->|B2C| Q2{Price point?}
+    Q2 -->|Free / Under $20/mo| G1[Product-Led Growth\nViral loops, freemium, self-serve onboarding]
+    Q2 -->|$20-$200/mo| G2[Content + Community\nSEO, YouTube, influencer, PLG]
+
+    Q1 -->|B2B| Q3{ACV — Annual\nContract Value?}
+    Q3 -->|Under $5K| G3[Self-Serve / Inside Sales\nTrials, demos, automated onboarding]
+    Q3 -->|$5K - $50K| G4[Inside Sales + ABM\nSDR outreach, targeted campaigns]
+    Q3 -->|$50K+| G5[Enterprise / Field Sales\nChampion-based, multi-stakeholder]
+
+    Q1 -->|Marketplace| G6[Supply-Side First\nSign up sellers/providers before buyers]
+
+    G1 --> T1[Tools: PostHog · Intercom · Viral loops]
+    G2 --> T2[Tools: Ahrefs · Substack · Creator partnerships]
+    G3 --> T3[Tools: HubSpot · Loom · Stripe]
+    G4 --> T4[Tools: Clay · Apollo · LinkedIn Sales Nav]
+    G5 --> T5[Tools: Salesforce · Gong · DocuSign]
+    G6 --> T6[Tools: Stripe Connect · Twilio · Typeform]
+
+    style G1 fill:#2ecc71,color:#fff
+    style G2 fill:#27ae60,color:#fff
+    style G3 fill:#3498db,color:#fff
+    style G4 fill:#2980b9,color:#fff
+    style G5 fill:#8e44ad,color:#fff
+    style G6 fill:#e67e22,color:#fff
+```
+
+---
+
+## 🏦 Fundraising Stage Gate
+
+What investors actually look for at each funding stage.
+
+```mermaid
+timeline
+    title Startup Funding Stages
+    Pre-Seed (Friends & Family / Angels)
+        : Founder credibility
+        : Problem clarity
+        : Early prototype or mockup
+        : $0 - $500K raised
+    Seed (Angels / Micro-VCs)
+        : MVP live
+        : Early users (even unpaid)
+        : Founder-market fit
+        : $500K - $3M raised
+    Series A (Institutional VCs)
+        : Proven product-market fit
+        : MRR growing 10-20% MoM
+        : Unit economics positive or clear path
+        : $3M - $15M raised
+    Series B (Growth VCs)
+        : Scalable GTM motion
+        : Strong retention and NPS
+        : Ready to pour fuel on fire
+        : $15M - $50M raised
+    Series C+ (Late Stage)
+        : Market leadership
+        : International expansion
+        : IPO preparation
+        : $50M+ raised
+```
+
+---
+
+## 🕸️ The 5 Types of Network Effects
+
+Not all moats are equal. Network effects are the strongest — but only if you pick the right type for your business.
+
+```mermaid
+graph TD
+    NE[Network Effects] --> D[Direct\nMore users = more value for each user\nExamples: WhatsApp, Telegram]
+    NE --> ID[Indirect\nMore users on one side = more value on the other\nExamples: iOS App Store, Uber]
+    NE --> DA[Data\nMore usage = smarter product\nExamples: Google Maps, Spotify]
+    NE --> SO[Social\nReputation and identity tied to platform\nExamples: LinkedIn, GitHub]
+    NE --> PL[Platform\nMore developers = more apps = more users\nExamples: Shopify, Salesforce]
+
+    D --> S1[Strength: Very hard to leave once friends are on]
+    ID --> S2[Strength: Winner-takes-most markets]
+    DA --> S3[Strength: Data compounds — late entrants can never catch up]
+    SO --> S4[Strength: Switching = losing your reputation or history]
+    PL --> S5[Strength: Ecosystem lock-in — switching costs explode]
+
+    style NE fill:#8e44ad,color:#fff
+    style D fill:#3498db,color:#fff
+    style ID fill:#2ecc71,color:#fff
+    style DA fill:#e67e22,color:#fff
+    style SO fill:#e74c3c,color:#fff
+    style PL fill:#f39c12,color:#fff
+```
+
+---
+
+## 🚨 Burn Rate Danger Zone
+
+Know exactly where you stand — and what to do at each stage.
+
+```mermaid
+flowchart LR
+    R18["🟢 RUNWAY 18+ MONTHS\nFocus: Scale\nHire aggressively\nExpand into new channels\nRaise your next round now"] -->
+    R12["🟡 RUNWAY 12-18 MONTHS\nFocus: Efficiency\nOptimize CAC\nImprove retention\nStart fundraising conversations"] -->
+    R6["🟠 RUNWAY 6-12 MONTHS\nFocus: Survival + Raise\nCut non-core spend\nDouble down on what works\nClose round in 3 months"] -->
+    R3["🔴 RUNWAY 3-6 MONTHS\nFocus: Ramen Profitable\nFreeze all hires\nCall every warm lead today\nBridge round or revenue NOW"] -->
+    R0["💀 RUNWAY UNDER 3 MONTHS\nFocus: Triage\nCut burn to minimum\nExplore acqui-hire\nHard conversations with team"]
+
+    style R18 fill:#27ae60,color:#fff
+    style R12 fill:#f39c12,color:#fff
+    style R6 fill:#e67e22,color:#fff
+    style R3 fill:#e74c3c,color:#fff
+    style R0 fill:#2c3e50,color:#fff
+```
+
+---
+
+## ☠️ AARRR Pirate Metrics — Full Stack Map
+
+Every stage of your funnel mapped to tools and KPIs.
+
+```mermaid
+flowchart TD
+    A["⚓ ACQUISITION\nHow do users find you?\nKPIs: CAC · CTR · CPC\nTools: Ahrefs · Google Ads · Product Hunt · Twitter"]
+    --> B["🎯 ACTIVATION\nDo they have a great first experience?\nKPIs: Activation Rate · Time-to-Value\nTools: Intercom · Appcues · PostHog"]
+    --> C["🔁 RETENTION\nDo they come back?\nKPIs: DAU/MAU · Churn Rate · Cohort Retention\nTools: Amplitude · Mixpanel · Braze"]
+    --> D["💰 REVENUE\nDo they pay?\nKPIs: MRR · ARPU · LTV · Payback Period\nTools: Stripe · ChartMogul · Baremetrics"]
+    --> E["📣 REFERRAL\nDo they tell others?\nKPIs: NPS · Viral Coefficient · K-factor\nTools: Viral Loops · ReferralHero · Typeform"]
+
+    style A fill:#3498db,color:#fff
+    style B fill:#2ecc71,color:#fff
+    style C fill:#9b59b6,color:#fff
+    style D fill:#f39c12,color:#fff
+    style E fill:#e74c3c,color:#fff
+```
+
+---
+
+## 📉 Equity Dilution Reality Check
+
+Most founders don't see this coming. Here's what happens to your ownership across rounds.
+
+```mermaid
+xychart-beta
+    title "Founder Equity Across Funding Rounds (%)"
+    x-axis ["Day 1", "Post Option Pool", "Post Pre-Seed", "Post Seed", "Post Series A", "Post Series B", "IPO"]
+    y-axis "Founder Ownership %" 0 --> 100
+    bar [100, 85, 72, 58, 38, 25, 15]
+    line [100, 85, 72, 58, 38, 25, 15]
+```
+
+> Each round, new shares are issued. Your percentage shrinks even if your absolute value grows. A 15% stake in a $1B company ($150M) is worth far more than 100% of nothing — but you must understand this **before** you sign term sheets.
+
+**Key dilution events:**
+- Option pool shuffle (pre-money) — investors ask for 10-15% pool created before valuation
+- Anti-dilution clauses — protect investors, not you
+- Pay-to-play provisions — miss a round and lose preferred rights
+- Liquidation preferences — investors get paid first on exit
+
+---
+
+## 📬 The Cold Outreach Formula
+
+Works for client acquisition, investor outreach, and partnership pitches.
+
+**Structure (5 sentences max):**
+
+```
+1. HOOK       — One specific thing about THEM (not generic flattery)
+2. BRIDGE     — Why you're reaching out NOW (trigger event or relevance)
+3. VALUE      — What you can do for them specifically (not what you do)
+4. PROOF      — One line of credibility (result, company, or mutual connection)
+5. SOFT CTA   — One easy yes/no question (not "let's hop on a call")
+```
+
+**Template — Client:**
+> "Saw your post about [specific problem]. We built a tool that solved exactly this for [similar company] — cut their [metric] by 40% in 6 weeks. Would a quick breakdown be useful?"
+
+**Template — Investor:**
+> "You invested in [Company X] in [year]. We're solving a similar distribution problem in [market] — already at $8K MRR after 3 months. Would a 10-slide deck be worth your time?"
+
+**Template — Partnership:**
+> "Your users often ask for [gap]. We fill it exactly. [Company Y] ran a similar integration and added 15% to retention. Open to a 15-min call to see if it fits?"
+
+**What kills cold outreach:**
+- Opening with "I" instead of "You"
+- Talking about your product before their problem
+- Asking for 30-45 minutes on first contact
+- No specificity — could have been sent to 1000 people
+
+---
+
+## 🔍 The "Is This a Real Business?" Filter
+
+Answer these 5 questions brutally honestly before writing a single line of code:
+
+| # | Question | Red Flag Answer |
+|---|---|---|
+| 1 | Who **exactly** is the customer? (Name a real person) | "Anyone who needs X" |
+| 2 | What is their **exact** pain — in their own words? | You've never talked to one |
+| 3 | Will they pay for it **today**, not "eventually"? | "Yes once it's better" |
+| 4 | Can you reach **1,000 of them** without ads? | No clear channel exists |
+| 5 | What stops a bigger player from **copying this in 6 months**? | Nothing |
+
+If you can't answer all 5, you don't have a business yet — you have a hypothesis. That's fine. But validate first.
+
+---
+
+## 💲 Pricing Psychology Cheat Sheet
+
+Most founders underprice by 3-5x. They price on cost, not value.
+
+| Technique | How It Works | Example |
+|---|---|---|
+| **Anchoring** | Show a high price first so the real price feels cheap | $999/yr crossed out, $499/yr highlighted |
+| **Decoy Pricing** | Add a middle tier that makes the top tier look like a deal | Basic $9 · Pro $19 · Business $18 → nobody picks Pro |
+| **Charm Pricing** | End in 9 or 7 — perceived as significantly less | $97 feels much less than $100 |
+| **Loss Aversion** | Frame as what they lose without it, not what they gain | "You're leaving $3,400/mo on the table" |
+| **Value-Based** | Price on outcome delivered, not hours/features | Saves 10 hrs/wk × $50/hr = $2,000/mo → charge $400/mo |
+| **Tier Anchoring** | Make the middle tier the obvious choice | Always 3 tiers; design the middle one first |
+| **Annual Upfront** | Offer 2 months free for annual — improves cash flow and reduces churn | $99/mo or $990/yr (2 months free) |
+
+> **Rule of thumb:** Whatever price you're thinking, double it. Then test. You can always go down; going up is painful.
+
+---
+
+## 🏰 The Moat Builder Matrix
+
+| Moat Type | How to Build It | When to Start | Examples |
+|---|---|---|---|
+| **Switching Costs** | Deep integrations, data migration pain, workflow lock-in | From day 1 — design stickiness in | Salesforce, Slack |
+| **Network Effects** | Make product better with each new user | As early as possible — hard to retrofit | WhatsApp, Airbnb |
+| **Brand** | Consistent voice, community, strong POV | After PMF — can't fake it early | Apple, Notion |
+| **Scale Economies** | Lower unit cost as volume grows | Series A+ — needs capital | Amazon, Stripe |
+| **Data Advantage** | Proprietary data nobody else can get | From day 1 — collect everything | Google, Spotify |
+| **IP / Patents** | Defensible technology or process | When you have something genuinely novel | Moderna, Qualcomm |
+| **Regulatory** | Licenses, certifications, government relationships | When entering regulated markets | Banks, telcos |
+
+> Most early startups can only build **switching costs** and **data advantage** from day 1. Network effects and brand come after PMF. Plan accordingly.
+
+---
+
+## 🧭 The Delegation Framework
+
+Founders become the bottleneck when they can't let go. Use this 4-quadrant system:
+
+```mermaid
+quadrantChart
+    title Founder Task Delegation Matrix
+    x-axis Low Skill Required --> High Skill Required
+    y-axis Low Time Required --> High Time Required
+    quadrant-1 YOU do it
+    quadrant-2 HIRE for it
+    quadrant-3 AUTOMATE it
+    quadrant-4 DELEGATE it
+    Strategic decisions: [0.85, 0.9]
+    Investor relations: [0.8, 0.7]
+    Core product vision: [0.9, 0.8]
+    Team hiring: [0.75, 0.65]
+    Scheduling: [0.2, 0.3]
+    Data entry: [0.15, 0.6]
+    Social posting: [0.25, 0.55]
+    Customer support L1: [0.3, 0.7]
+    Code reviews: [0.7, 0.5]
+    Content writing: [0.55, 0.6]
+```
+
+**Simple rule:**
+- **High skill + Low time** → You do it (strategic, quick)
+- **High skill + High time** → Hire someone
+- **Low skill + Low time** → Automate with AI/tools
+- **Low skill + High time** → Delegate to team or VA
+
+---
+
+## 📈 Micro-SaaS to Scale: The Progression Map
+
+```mermaid
+flowchart LR
+    S1["🌱 SOLO TOOL\n$0 - $1K MRR\nOne person's problem\nBuilt in a weekend\nNo team needed\nKey: Does anyone pay?"] -->
+    S2["🪴 NICHE SAAS\n$1K - $10K MRR\nSmall community problem\nBasic support needed\nMaybe 1 contractor\nKey: Is churn under 5%?"] -->
+    S3["🌳 VERTICAL SAAS\n$10K - $100K MRR\nOwn a specific industry\nSmall team (3-5)\nSales motion forming\nKey: Is NRR over 100%?"] -->
+    S4["🏢 PLATFORM\n$100K+ MRR\nEcosystem play\nPartnerships & APIs\nFull team structure\nKey: Do users build on top of you?"]
+
+    style S1 fill:#27ae60,color:#fff
+    style S2 fill:#2980b9,color:#fff
+    style S3 fill:#8e44ad,color:#fff
+    style S4 fill:#2c3e50,color:#fff
+```
+
+**What changes at each stage:**
+| Stage | Biggest Challenge | What to Focus On |
+|---|---|---|
+| Solo Tool | Nobody knows it exists | Distribution > Product |
+| Niche SaaS | Churn kills growth | Retention + onboarding |
+| Vertical SaaS | Hiring wrong people | Process + team |
+| Platform | Competitors copy you | Ecosystem + moat |
+
+---
+
+## 🚩 Investor Red Flag Checklist
+
+VCs have pattern-matched thousands of pitches. These kill deals instantly:
+
+| Red Flag | Why It's Fatal |
+|---|---|
+| "We have no competition" | Either no market exists, or you haven't researched |
+| Market sizing is top-down only | "1% of a $10B market" = not credible |
+| No evidence of customer conversations | You're building on assumption |
+| Asking for NDA before pitch | Signals inexperience; VCs see 1000s of ideas |
+| No understanding of unit economics | Can't run the business if you can't model it |
+| Founders can't explain why **now** | Timing is everything — why is this the moment? |
+| Product demo doesn't work in the pitch | Preparation problem signals execution problem |
+| Equity split is 50/50 with no vesting | Conflict magnet; no vesting = co-founder risk |
+| "We just need to go viral" | Not a distribution strategy |
+| Projecting $100M revenue in year 3 with no basis | Destroys credibility on all other numbers |
+
+---
+
+## 📢 The "Build in Public" Content Engine
+
+Build your audience while you build your product. Compounding attention is an asset.
+
+**The Weekly Loop:**
+
+```mermaid
+flowchart LR
+    Mon["📅 MONDAY\nShare the problem\nyou're solving this week\n#BuildInPublic"] -->
+    Wed["📅 WEDNESDAY\nShare what you built\nor learned\nScreenshots > words"] -->
+    Fri["📅 FRIDAY\nShare one metric\nor milestone\nHonesty builds trust"] -->
+    Loop["🔁 Repeat\nEvery week\nfor 6 months"] --> Mon
+```
+
+**Content formats that work:**
+- "We went from X to Y in Z days — here's how"
+- "I was wrong about [assumption]. Here's what we learned"
+- "Shipped: [feature]. The problem it solves:"
+- "Week 12 metrics: [honest numbers]"
+- "We almost quit. Here's why we didn't"
+
+**Platforms by audience:**
+| Platform | Best For |
+|---|---|
+| Twitter/X | Tech founders, developers, investors |
+| LinkedIn | B2B buyers, enterprise, recruiters |
+| YouTube | Long-form, tutorials, product demos |
+| Reddit | Niche communities, early adopters |
+| Newsletter | Direct line to your most engaged readers |
+
+---
+
+## ⚖️ Legal Entity Decision Tree
+
+```mermaid
+flowchart TD
+    Start([Where are you selling?]) --> Q1{Primary\nmarket?}
+
+    Q1 -->|Bangladesh only| Q2{Raising from\nlocal VCs?}
+    Q2 -->|Yes| E1[Private Limited Company\nvia RJSC Bangladesh\nRequired for iDEA and SBDL]
+    Q2 -->|No / Bootstrap| E2[Trade License + Sole Proprietorship\nFastest to start, easy banking]
+
+    Q1 -->|US / Global| Q3{Raising from\nUS investors?}
+    Q3 -->|Yes| E3[Delaware C-Corp\nvia Stripe Atlas or Clerky\nRequired for Y Combinator and most US VCs]
+    Q3 -->|SaaS / No raise| E4[Wyoming LLC\nLow cost, flexible, great for solo founders]
+
+    Q1 -->|Southeast Asia / MENA| E5[Singapore Pte. Ltd.\nTax-friendly, trusted by global VCs\nGood for BD founders going regional]
+
+    E1 --> N1[Next: BIDA registration for\nforeign investment eligibility]
+    E3 --> N2[Next: Open Mercury or Brex account\nfor US banking]
+    E5 --> N3[Next: ACRA registration in Singapore\ncan be done remotely]
+
+    style E1 fill:#27ae60,color:#fff
+    style E2 fill:#2980b9,color:#fff
+    style E3 fill:#8e44ad,color:#fff
+    style E4 fill:#e67e22,color:#fff
+    style E5 fill:#16a085,color:#fff
+```
+
+---
+
+## 🤖 AI Agent Architecture for Founders
+
+How to wire your own AI employee for any repetitive business task.
+
+```mermaid
+flowchart TD
+    Input[/"📥 INPUT\nEmail / Slack / Form\nScheduled trigger / Webhook"/]
+    --> Brain["🧠 LLM BRAIN\nClaude / GPT-4o\nDecision making + reasoning\nWith system prompt guardrails"]
+    --> Memory["💾 MEMORY LAYER\nShort-term: conversation context\nLong-term: vector DB (Pinecone / Supabase pgvector)\nEpisodic: past decisions log"]
+    --> Tools["🔧 TOOL USE\nWeb search · Email send\nCRM write · Calendar book\nSlack message · Spreadsheet update"]
+    --> Orchestration["⚙️ ORCHESTRATION\nN8N / Make / LangGraph\nRouting · Retry logic\nHuman-in-the-loop triggers"]
+    --> Output[/"📤 OUTPUT\nDraft sent · Row updated\nSlack notified · Report generated"/]
+
+    Brain --> HumanCheck{"🧑 Human\napproval\nneeded?"}
+    HumanCheck -->|Yes| HumanInput["👤 Human reviews\nand approves"]
+    HumanInput --> Tools
+    HumanCheck -->|No| Tools
+```
+
+**Real examples you can build today:**
+| Agent | What It Does | Stack |
+|---|---|---|
+| Lead Qualifier | Scores inbound leads, sends personalized reply | Claude + Make + HubSpot |
+| Support Triage | Classifies tickets, answers L1, escalates L2 | GPT-4o + Intercom + Notion |
+| Competitor Monitor | Weekly digest of competitor moves | Perplexity + N8N + Slack |
+| Invoice Chaser | Sends polite payment reminders on schedule | Claude + Make + Gmail |
+| Content Repurposer | Turns blog post into 5 tweets + LinkedIn post | Claude + Buffer API |
+
+---
+
+## 🕵️ The "Steal Like a Founder" Competitive Analysis Template
+
+For any competitor, answer these 7 questions. The gaps are your entry points.
+
+| Question | Where to Find It | What to Do With It |
+|---|---|---|
+| Who is their exact ICP? | Their homepage, case studies, LinkedIn ads | Find the customer segment they ignore |
+| What's their pricing? | Pricing page or G2/Capterra | Find the tier they don't serve (too cheap or too expensive) |
+| What do 1-star reviews say? | G2, Trustpilot, App Store, Reddit | That's your feature list |
+| What SEO keywords do they rank for? | Ahrefs or Semrush | Find high-volume gaps they miss |
+| What do their job postings reveal? | LinkedIn, their careers page | Shows where they're investing next |
+| Who just left their company? | LinkedIn — filter ex-employees | Potential hires who know the product deeply |
+| What's their NPS? | Reviews + Twitter complaints | Low NPS = high churn = opportunity |
+
+---
+
+## 📋 One-Page Business Model Canvas
+
+Fill this out in 30 minutes before building anything:
+
+```mermaid
+block-beta
+  columns 5
+  KP["🤝 KEY PARTNERS\nWho helps you\ndeliver value?\n(Suppliers, alliances,\nplatforms)"] KA["⚙️ KEY ACTIVITIES\nWhat do you\nmust do well?\n(Building, selling,\nsupporting)"] VP["💎 VALUE PROPOSITION\nWhat pain do\nyou solve?\nFor whom?\nWhy you?"] CR["👥 CUSTOMER\nRELATIONSHIPS\nHow do you\nacquire, retain,\nand grow?"] CS["🎯 CUSTOMER\nSEGMENTS\nWho are you\nserving?\nNiche first."]
+  KP KR["🏗️ KEY RESOURCES\nWhat do you\nneed to deliver?\n(Tech, team,\ndata, brand)"] VP CH["📡 CHANNELS\nHow do customers\nfind and buy?\n(SEO, sales,\npartnerships)"] CS
+  C5["💸 COST STRUCTURE\nWhat are your biggest costs?\n(People, infra, marketing, ops)"] C5 C5 RS["💰 REVENUE STREAMS\nHow do you make money?\n(SaaS, transactional, licensing, marketplace)"] RS
+```
+
+---
+
+## 📊 The Weekly Founder Metrics Dashboard
+
+Review these 7 numbers every Monday morning. Nothing else matters until these are healthy.
+
+| Metric | What It Tells You | Healthy Range | Red Flag |
+|---|---|---|---|
+| **MRR** (Monthly Recurring Revenue) | Is the business growing? | 10-20% MoM growth | Flat or declining |
+| **Net Churn** | Are you losing more than you gain? | Under 2% monthly | Over 5% monthly |
+| **CAC** (Customer Acquisition Cost) | How expensive is growth? | Under 1/3 of LTV | CAC > LTV |
+| **Activation Rate** | Do new users get value? | Over 40% | Under 20% |
+| **DAU/MAU Ratio** | Is your product sticky? | Over 20% | Under 10% |
+| **Runway** | How long can you survive? | Over 12 months | Under 6 months |
+| **NPS** (Net Promoter Score) | Do users love you enough to refer? | Over 40 | Under 20 |
+
+> Track these in a simple Notion table or Airtable. Review every Monday at 9am. Make it a ritual.
+
+---
+
 ## 📈 Pitch Deck Mastery (2025 Edition)
 
 Building a deck is about telling a story backed by undeniable data. VCs in 2025 are looking for **path-to-profitability** and **sustainable growth**.
@@ -294,6 +790,26 @@ How the system works for a Bangladeshi founder.
 
 ## 📋 Table of Contents
 
+- [Startup Failure Autopsy](#-startup-failure-autopsy)
+- [Go-To-Market Strategy Selector](#️-go-to-market-strategy-selector)
+- [Fundraising Stage Gate](#-fundraising-stage-gate)
+- [Network Effects Map](#️-the-5-types-of-network-effects)
+- [Burn Rate Danger Zone](#-burn-rate-danger-zone)
+- [AARRR Pirate Metrics](#️-aarrr-pirate-metrics--full-stack-map)
+- [Equity Dilution Reality Check](#-equity-dilution-reality-check)
+- [Cold Outreach Formula](#-the-cold-outreach-formula)
+- [Is This a Real Business? Filter](#-the-is-this-a-real-business-filter)
+- [Pricing Psychology Cheat Sheet](#-pricing-psychology-cheat-sheet)
+- [Moat Builder Matrix](#️-the-moat-builder-matrix)
+- [Delegation Framework](#-the-delegation-framework)
+- [Micro-SaaS Progression](#-micro-saas-to-scale-the-progression-map)
+- [Investor Red Flag Checklist](#-investor-red-flag-checklist)
+- [Build in Public Engine](#-the-build-in-public-content-engine)
+- [Legal Entity Decision Tree](#️-legal-entity-decision-tree)
+- [AI Agent Architecture](#-ai-agent-architecture-for-founders)
+- [Competitive Analysis Template](#️-the-steal-like-a-founder-competitive-analysis-template)
+- [Business Model Canvas](#-one-page-business-model-canvas)
+- [Weekly Metrics Dashboard](#-the-weekly-founder-metrics-dashboard)
 - [Learning & Knowledge](#learning--knowledge)
 - [Courses & Videos](#courses--videos)
 - [Podcasts](#podcasts)
