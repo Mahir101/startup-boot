@@ -2,8 +2,6 @@
 
 > A curated collection of essential resources, tools, and playbooks to help founders build, launch, and scale startups successfully.
 
-**Maintained & Curated by [Md. Mahir Labib](https://x.com/MdMahirlabib5)**
-
 [![GitHub stars](https://img.shields.io/github/stars/Mahir101/startup-boot?style=social)](https://github.com/Mahir101/startup-boot)
 [![GitHub forks](https://img.shields.io/github/forks/Mahir101/startup-boot?style=social)](https://github.com/Mahir101/startup-boot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -3182,6 +3180,6 @@ Read the full guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
-**Made with ❤️ by [Md. Mahir Labib](https://x.com/MdMahirlabib5)**
+**Made with ❤️ by Md. Mahir Labib
 
 *Last Updated: March 2026*
