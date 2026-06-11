@@ -1641,7 +1641,7 @@ Use this 25-min structure on every first call:
 - **W-9 vs W-8BEN-E:** As a non-US entity/contractor, you sign **W-8BEN-E** (entity) or **W-8BEN** (individual). Never W-9 — that's for US persons.
 - **1099 forms:** US clients don't need to issue you one if you're foreign — but they may ask. Reassure them with your W-8.
 - **Payment rails ranked (cheapest → priciest):** Wise Business > Payoneer > Deel > PayPal > Stripe Atlas (if incorporated).
-- **Consider a US LLC via Stripe Atlas or Firstbase.io ($500 setup):** Unlocks Stripe, Mercury bank, and makes enterprise contracts easier. Adds US tax filing ($500–$1k/yr).
+- **Consider a US LLC via Stripe Atlas or Firstbase.io ($500 setup):** Unlocks Stripe, Mercury bank, and makes enterprise contracts easier. Adds US tax filing ($500–$1k/yr). Lower-cost alternative: [LLC Class](https://llcclass.com/wyoming) — Wyoming LLC formation from $199, includes registered agent, EIN, and operating agreement. Ideal for solo founders who don't need Delaware C-Corp.
 - **Bangladesh Bank reporting:** Inward remittances must route through a scheduled bank. Keep Form-C and contracts for audit trail.
 - **Tax holiday:** BD IT/ITES export income is tax-exempt through **June 2027** — verify current status with NBR before filing.
 
