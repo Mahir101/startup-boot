@@ -87,6 +87,7 @@ This collection includes:
 
 ### Marketing channels
 - Launch platforms: [Product Hunt](https://www.producthunt.com), [BetaList](https://betalist.com), [Reddit](https://www.reddit.com).
+- Startup directories: [MEDIAPRONET](https://mediapronet.com) - list a newly launched startup or SaaS tool on its own page; useful at launch stage.
 - Content channels: [Twitter/X](https://twitter.com), [LinkedIn](https://linkedin.com), [Substack](https://substack.com), [Beehiiv](https://beehiiv.com).
 - Growth tactics: SEO, newsletter, referral loops, paid ads, community engagement.
 
